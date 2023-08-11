@@ -9,7 +9,7 @@
 <body>
     <div id="app" style="padding: 1px;">
 
-        <section class="rifa" v-for="n in quantidade">
+        <section class="rifa" v-for="n in range(inicio, quantidade)">
             <div class="numero1">
                 <p>{{n}}</p>
             </div>
@@ -110,8 +110,14 @@ table {
   createApp({
     data() {
     return {
-      quantidade: 1000
+        inicio: 1001,
+      quantidade: 1400
     }
+  },
+  methods:{
+    range : function (start, end) {
+      return Array(end - start + 1).fill().map((_, idx) => start + idx)
+   }
   }
   }).mount('#app')
 </script>
