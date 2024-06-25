@@ -1,139 +1,109 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diploma</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-</head>
-<body>
-    <div id="app" style="padding: 1px;">
-
-        <section class="diploma" v-for="nome in nomes" :key="nome">
-            <div class="nome">
-                <p>{{nome}}</p>
-            </div>
-        </section>
-        
-    </div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma</title>
+
+</head>
+<body>
+    <div id="app" style="padding: 1px;">
+
+
     
-</body>
-<style>
-    /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-</style>
-<style>
-
-    .diploma{
-        margin: 0px;
-        background-color: #fff;
-        height: 1675px;
-        width: 1184px;
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-
-        
-    }
-    .nome{
-        font-weight: bold;
-        font-size: 60px;
-        transform: rotate(270deg);
-        text-align: center;
-
-    }
-
-    @media print{
-    .rifa{ page-break-inside:avoid; }
-    }
-</style>
-
-<script>
-  const { createApp, ref } = Vue
-
-  createApp({
-    data() {
-    return {
-        nomes:[
-            'ANE GABRIELE DOS SANTOS VIEIRA',
-            'ARTHUR GASPARELLI MARQUES',
-            'BRYAN DAVI SOARES DOS SANTOS',
-            'DAVI HENRIQUE GALO MENEZES',
-            'EICHILLA CRISTINY SANTANA MARTINS DOS ANJO',
-            'EMANUELA COUTO MELO',
-            'ENZO GABRIEL MARTINS PEREIRA',
-            'GABRIEL HENRIQUE ALVES SANTOS',
-            'HACSA CARVALHO AMARAL',
-            'HENZO FERNANDO SALES DA SILVA',
-            'JAQUELYNE GABRIELLY TEIXEIRA',
-            'JOHNATAS LUCAS TERENCE SOUSA',
-            'KALEB ARTHUR VELOSO PARRA',
-            'KALLEBE CARVALHO AMARAL',
-            'MARIA VITORIA BRUNHARALOPES',
-            'MARIANA GARCIA ALMEIDA',
-            'MATHEUS DANIEL MEDEIROS NAZARIO',
-            'MIGUEL FERREIRA GONÇALVEZ',
-            'MIGUEL LUCAS DOS SANTOS SILVA',
-            'NATHALIA DA CONCEIÇÃO PINHEIRO',
-            'SOFIA REGAZINI RODRIGUES DOS SANTOS',
-            'VITOR MIGUEL SILVEIRA RIBEIRO',
-            'YURI GABRIEL ESPINDOLA DA SILVA',
-            'MARIA CLARA VITORIA PEREIRA DOS ANJOS',
-            'JEYSON ADRIAN DE LIMA MORAIS'
-        ]
-    }
-  },
-  methods:{
-    range : function (start, end) {
-      return Array(end - start + 1).fill().map((_, idx) => start + idx)
-   }
-  }
-  }).mount('#app')
-</script>
+        <section class="diploma">
+        <div class="nome">
+            <p>TESTE TESTOSO TESTADO</p>
+        </div>
+        </section>
+        
+
+        
+
+        
+</div>
+
+</body>
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+</style>
+<style>
+
+.diploma{
+    margin: 0px;
+    background-color: #fff;
+    background-image: url("img/vazio.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1675px;
+    width: 1184px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 10px;
+
+    
+}
+.nome{
+    font-weight: bold;
+    font-size: 50px;
+    transform: rotate(270deg);
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 250px;
+}
+
+@media print{
+.rifa{ page-break-inside:avoid; }
+}
+</style>
+
+
 </html>
