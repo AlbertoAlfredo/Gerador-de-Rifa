@@ -6,3 +6,14 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Pyinstaller
+
+_internal/
+build/
+
+# arquivos do projeto
+
+diploma.html
+diplomas.pdf
+_tmp/
