@@ -3,7 +3,8 @@ import json
 
 def gerar_html():
 
-    numeros = json.loads(numeros)
+    with open("numeros.json", "r") as numeros:
+        numeros = json.load(numeros)
 
     with codecs.open("base/head.html", 'rb', 'utf-8') as header:
         head = header.read()
@@ -15,14 +16,14 @@ def gerar_html():
 
 
 
-    for numero in range( numeros.inicio, numeros.final):
+    for numero in range( numeros["inicio"], numeros["final"] + 1):
         diploma += """
         <section class="rifa">
             <div class="numero1">
-                <p>""" + numero + """</p>
+                <p>""" + str(numero) + """</p>
             </div>
             <div class="numero2">
-                <p>""" + numero + """</p>
+                <p>""" + str(numero) + """</p>
             </div>
 
         </section>
@@ -30,5 +31,5 @@ def gerar_html():
 
     diploma = head + diploma + foot
 
-    with open("diploma.html", "w") as diplomas_impressao:
+    with open("rifas.html", "w") as diplomas_impressao:
         diplomas_impressao.write(diploma)
