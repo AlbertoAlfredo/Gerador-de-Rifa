@@ -1,6 +1,6 @@
 import codecs
 
-nomes = open("nomes.txt", "r")
+nomes = open("nomes.txt", "r", encoding="utf8")
 nomes_alunos = nomes.read().splitlines()
 
 with codecs.open("base/head.html", 'rb', 'utf-8') as header:
